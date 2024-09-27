@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+}
+.contenedor {
+  width: 400px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+input:focus {
+  outline: none;
+  border-color: #09bc8a;
+}
+.content-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  background-color: #09bc8a;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.wd-btn {
+  width: 150px;
+}
+.content-pagragh {
+  text-align: center;
+  margin-top: 30px;
+}
+.sp-register {
+  color: #09bc8a;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+/*====== Navbar ========*/
+header {
+  background-color: #ffffff;
+  /*  padding: 15px 20px; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Asegura que el header esté encima del aside */
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav img {
+  height: 50px;
+}
+nav form {
+  display: flex;
+}
+nav input[type="text"] {
+  width: 360px;
+  padding: 13px;
+  border: 1px solid #ccc;
+  flex-grow: 1;
+  margin-bottom: 0px;
+  border-radius: 5px 0px 0px 5px;
+}
+nav button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.BoxText {
+  display: flex;
+  align-items: center;
+}
+.content-img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.content-img img {
+  height: 25px;
+}
+.content-img span {
+  font-weight: bold;
+}
+.content-img span i {
+  font-size: 20px;
+  font-weight: bold;
+}
+.imageBox {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #84ffdc;
+  border-radius: 200px;
+  border: 1px solid #09bc8a;
+}
+.boxLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* .boxLogo img {
+  width: 150px;
+  height: 150px;
+} */
+.boxLogo span {
+  font-size: 1.3rem;
+  color: #1e1e1e;
+  font-weight: bold;
+}
+.btnSearch {
+  border-radius: 0px 5px 5px 0px;
+}
+/*============== aside ==============*/
+.left-aside {
+  height: calc(100vh - 81px); /* Ajusta la altura para debajo del header */
+  width: 250px;
+  background-color: #09bc8a;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 81px; /* Alinea debajo del header */
+  left: 0;
+  overflow-y: auto;
+}
+.left-aside h3 {
+  text-align: left;
+  color: #172a3a;
+}
+.left-aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+.left-aside ul li {
+  margin: 10px 0;
+}
+.left-aside ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.left-aside ul li a:hover {
+  background-color: #172a3a;
+}
+
+/*=== Estilos para el contenedor ===*/
+main.content {
+  margin-left: 250px; /* Ancho del aside */
+  padding: 20px;
+  flex-grow: 1;
+  background-color: #f4f4f4;
+  margin-top: 81px; /* Altura del header */
+}
+/* .video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+} */
+.category-container h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 20px 0;
+}
+.video-grid {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+.video-wrapper {
+  flex: 0 0 auto;
+}

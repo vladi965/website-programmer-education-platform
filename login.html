@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plataformas de Cursos - Youtube</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>Iniciar sesión</h1>
+      <form id="loginForm">
+        <label for="usuario">Usuario:</label>
+        <input
+          type="text"
+          id="loginUsername"
+          placeholder="Nombre de usuario"
+          name="usuario"
+          required
+        />
+        <label for="contrasena">Contraseña:</label>
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Contraseña"
+          name="contrasena"
+          required
+        />
+        <div class="content-btn">
+          <button class="wd-btn" type="submit">Ingresar</button>
+        </div>
+      </form>
+      <div class="content-pagragh">
+        <p>
+          ¿No tienes una cuenta?
+          <a href="./src/pages/registrar.html"
+            ><span class="sp-register">Registrate</span></a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="/src/js/main.js"></script>
+  </body>
+</html>
